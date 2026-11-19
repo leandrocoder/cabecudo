@@ -1,0 +1,72 @@
+{
+  "formatVersion": 11,
+  "name": "Cabecudo",
+  "startSceneId": "scn_e9cfdf1a",
+  "settings": {
+    "width": 960,
+    "height": 540,
+    "scaleMode": "expand",
+    "letterboxColor": "#000000",
+    "pixelArt": false,
+    "fixedStep": 0.016666666666666666,
+    "gravity": {
+      "x": 0,
+      "y": 980
+    },
+    "collisionLayers": [
+      "Default"
+    ],
+    "collisionMatrix": [
+      [
+        true
+      ]
+    ],
+    "kind": "settings",
+    "id": "settings",
+    "publish": {
+      "title": "Cabecudo",
+      "author": "Leandro",
+      "tagline": "A big headed blond guy with glasses, idling."
+    },
+    "input": {
+      "phones": false,
+      "touch": false
+    }
+  },
+  "folders": [
+    {
+      "kind": "folder",
+      "id": "folder_e922da32",
+      "name": "Scenes",
+      "parentId": null
+    },
+    {
+      "kind": "folder",
+      "id": "folder_390b3179",
+      "name": "Scripts",
+      "parentId": null
+    },
+    {
+      "kind": "folder",
+      "id": "folder_75388df6",
+      "name": "Models",
+      "parentId": null
+    }
+  ],
+  "entries": [
+    {
+      "id": "scn_e9cfdf1a",
+      "kind": "scene",
+      "name": "Main",
+      "folderId": "folder_e922da32",
+      "path": "Scenes/Main.scene"
+    },
+    {
+      "id": "model_841a0653",
+      "kind": "model",
+      "name": "Kenji",
+      "folderId": "folder_75388df6",
+      "path": "Models/Kenji.model"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "kind": "scene",
+  "id": "scn_e9cfdf1a",
+  "name": "Main",
+  "mode": "3d",
+  "gameObjects": [
+    {
+      "id": "ent_a5393779",
+      "name": "Main Camera",
+      "parentId": null,
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "position": {
+            "x": 0,
+            "y": 0.85,
+            "z": 3
+          },
+          "rotation": 0,
+          "rotationX": -2,
+          "scale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "backgroundColor": "#000000",
+          "fov": 40,
+          "near": 0.1,
+          "far": 500,
+          "type": "Camera",
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "id": "ent_373f54b6",
+      "name": "Sky Light",
+      "parentId": null,
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "type": "Light",
+          "kind": "hemisphere",
+          "color": "#ffffff",
+          "intensity": 0.6,
+          "castShadow": false,
+          "groundColor": "#3a3f5c"
+        }
+      ]
+    },
+    {
+      "id": "ent_df3e2522",
+      "name": "Sun",
+      "parentId": null,
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "position": {
+            "x": 3,
+            "y": 5,
+            "z": 6
+          },
+          "rotation": 0,
+          "scale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "type": "Light",
+          "kind": "directional",
+          "color": "#fff3d6",
+          "intensity": 0.6,
+          "castShadow": false,
+          "target": {
+            "x": -3,
+            "y": -5,
+            "z": -6
+          },
+          "shadowMapSize": 2048,
+          "shadowArea": 15
+        }
+      ]
+    },
+    {
+      "id": "ent_263b4185",
+      "name": "Kenji",
+      "parentId": null,
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": 0,
+          "scale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "type": "ModelRenderer",
+          "modelId": "model_841a0653",
+          "material": "toon",
+          "color": "#ffffff",
+          "opacity": 1,
+          "castShadow": true,
+          "receiveShadow": false,
+          "visible": true,
+          "clip": "Idle",
+          "playOnStart": true,
+          "speed": 1
+        }
+      ]
+    }
+  ],
+  "folderId": "folder_e922da32"
+}
